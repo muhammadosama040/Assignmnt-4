@@ -1,0 +1,141 @@
+body{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.dropdown-menu .dropdown-item:hover{
+  background-color: #D2C7AC !important;
+  color: black !important;
+}
+
+.dropdown-menu .dropdown-item{
+  color: #7A7A7B !important;
+  background-color: #D2C7AC !important;
+}
+
+.dropdown-menu a:hover{
+  background-color: #D2C7AC !important;
+  color: black !important;
+  border-radius: 0px !important;
+}
+
+.dropdown-submenu {
+  position: relative;
+  background-color: #D2C7AC !important;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+  background-color: #D2C7AC !important;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  background-color: #D2C7AC !important;
+}
+
+.con{
+  background-image: url(images/contact.jpg) !important;
+  width: 100%;
+  height: 60%;
+}
+
+.card{
+  width: 200px;
+  height: 335px !important;
+  margin: 5px auto !important;
+}
+
+.btn-primary{
+  width: 100%;
+  background-color: #4D443D !important;
+  border-color: #4D443D !important;
+}
+
+.single-content{
+  position: relative;
+  transform: -3s;
+}
+
+.single-content .text-content, .single-content:after{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.single-content:after{
+  content: '';
+  display: block;
+  background-color: #D2C7AC;
+  top: 0px;
+  bottom: 86px;
+  opacity: 0;
+  transform: rotate3d(-1, 1, 0, 100deg);
+  transition: -4s;
+}
+
+.single-content:hover:after{
+  opacity: 0.5;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.text-content{
+  top: 45%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%, -30%);
+  transition: -3s;
+  /* text-align: center; */
+  color: #fff;
+}
+
+.single-content:hover .text-content{
+  opacity: 1;
+  transform: translate(0, -50%);
+  transition-delay: -3s;
+}
+
+.top-left {
+  position: absolute;
+  top: 7px;
+  left: 16px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  background-color:gray;
+  opacity: 0.6;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media screen and (max-width: 400px){
+  iframe{
+    width: 100%;
+    height: 200px;
+  }
+}
